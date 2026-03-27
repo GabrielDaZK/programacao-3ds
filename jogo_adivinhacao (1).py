@@ -1,4 +1,3 @@
- Importa o módulo random para gerar números aleatórios.
 import random
 
 # Exibe o menu de dificuldade e solicita ao usuário que escolha um nível.
@@ -83,29 +82,4 @@ while tentativas < max_tentativas:
 # Se o loop terminar normalmente (sem acertar), mostra mensagem de derrota.
 else:
     print(f"\n💀 Fim do jogo! O número secreto era {numero_secreto}.")
-    print(f"Você não conseguiu adivinhar no nível {nivel}. Tente novamente!"): "))
-
-    # Conta esta tentativa como usada.
-    tentativas += 1
-
-    # Compara o palpite com o número secreto.
-    if palpite == numero_secreto:
-        # O jogador acertou, encerra o loop usando `break`.
-        print(f"Parabéns! Você acertou o número em {tentativas} tentativas.")
-        break
-    elif palpite < numero_secreto:
-        # Palpite muito baixo.
-        print("Quase lá! Tente um número maior.")
-    else:
-        # Palpite muito alto.
-        print("Quase lá! Tente um número menor.")
-
-    # Mostra ao jogador quantas tentativas ainda restam.
-    if tentativas < max_tentativas:
-        print(f"Você tem {max_tentativas - tentativas} tentativas restantes.")
-
-# O bloco `else` do while só é executado se o loop terminar normalmente
-# (sem passar pelo `break`), ou seja, quando o jogador usa todas as tentativas.
-else:
-    print("Infelizmente, você não acertou. O número era", numero_secreto)
-    print("Fim do jogo!")
+    print(f"Você não conseguiu adivinhar no nível {nivel}. Tente novamente!")
